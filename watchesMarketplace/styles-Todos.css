@@ -212,6 +212,6 @@ footer{
     background-color: violet;
 }
 
-.noBullet{
+#noBullet{
     list-style: none;
 }
