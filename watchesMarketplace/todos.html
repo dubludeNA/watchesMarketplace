@@ -3,73 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles-Todos.css" type="text/css" >
-    <!-- <link rel="stylesheet" href="css/fontawesome.css"> -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"></head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Living in the now</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles-Todos.css">
+</head>
 <body>
-<div class="content">
-    <header>
-        <div class ="menu-bar">
-            <ul>
-                <li>
-                    <div class="dropdown">
-                        <button onclick="myFunction()" class="dropbtn">Home</button>
-                            <div id="myDropdown" class="dropdown-content">
-                                <a href="#">Mission</a>
-                                <a href="#">Vision</a>
-                                <a href="#">Team</a>
-                            </div>
-                        </div>  
-                    </li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Cart</a></li>
-                <li><a href="#"><i class = "fa fa-phone"></i>Get in touch</a></li>
-            </ul>
-        </div>
-    </header>
-    <main>
-        <div class = "container-nav">
-            <div class = "container-1"></div>
-            <div class = "container-2"></div>
-            <div class = "container-3"></div>
-            <div class = "container-4"></div>
-            <div class = "container-5"></div>
-            <div class = "container-6"></div>
-            <div class = "container-7"></div>
-            <div class = "container-8"></div>
-            <div class = "container-9"></div>
-            <div class = "container-10"></div>
-            <div class = "container-11"></div>
-            <div class = "container-12"></div>
-        </div>
-    </main>
-    <div class="searchBox">
-        <input class="searchInput"type="text" name="" placeholder="Search">
-        <button class="searchButton" href="#">
-            <i class="fas fa-search"></i>
-        </button>
-    </div>
-    <nav>
-        <div class="nav">
-            <label class ="nav">Land
-                <input type="checkbox">
-                <span class="checkmark"></span>
-            </label>
-            <label class ="nav">Sea
-                <input type="checkbox">
-                <span class="checkmark"></span>
-            </label>
-            <label class ="nav">Air
-                <input type="checkbox">
-                <span class="checkmark"></span>
-            </label>
+    <!--Start Nav Bar-->
+    <nav class="navbar">
+        <div class="navbar-center">
+            <span class="nav-icon">
+                <i class="fas fa-bars"></i>
+            </span>
+            <div class="cart-bn">
+                <span class="nav-icon">
+                    <i class="fas fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">0</div>   
+            </div>
         </div>
     </nav>
-    <footer>
-    </footer>
-</div>
+    <!--End Nav Bar-->
+
+    <!--Start header-->
+    <header class="hero">
+        <div class="banner">
+            <h6 class="banner-title">Experience something for the first time</h6>
+            <button class="banner-btn">DO IT</button>
+        </div> 
+    </header>
+    <!--End header-->
+
+    <!--Start products-->   
+    <section class="products">
+        <div class="section-title">
+            <h2>Our products</h2>
+        </div>
+        <div class="products-center">
+            <article class="product">
+                <div class="img-container">
+                    <img src="./Poze/Trail Running.jpg" alt = "product" class="product-img">
+                    <button class="bag-btn" data-id="1">
+                        <i class="fas fa-shopping-cart"></i>
+                        Experience
+                    </button>
+                </div>
+                <h3>Trail Running</h3>
+                <h4>16$</h4>
+            </article>
+        </div>
+    </section>
+    <!--End products-->   
+
+    <!--Start Cart-->
+    <div class="cart-overlay">
+        <div class="cart">
+            <span class="close-cart">
+                <i class="fas fa-window-close"></i>
+            </span>
+            <h2>Your cart</h2>
+            <div class="cart-content">
+                <!--Cart item-->
+                <div class="cart-item">
+                    <img src="./Poze/Trail Running.jpg" alt="Trail Running">
+                    <div>
+                        <h4>Trail Running</h4>
+                        <h5>16$</h5>
+                        <span class="remove-item"></span>
+                    </div>
+                    <div>
+                        <i class="fas fa-chevron-up"></i>
+                        <p class="item-amount">1</p>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                <!--End Cart item-->
+            </div>
+            <div class="cart-footer">
+                <h3>Your Total: $ <span class="cart-total">0</span></h3>
+                <button class="clear-cart banner-btn">Clear Cart</button>
+            </div>
+        </div>
+    </div>
+    <!--End Cart-->
+    <scrip src="main.js"></scrip>
+    <scrip src="app.js"></scrip>
 </body>
-<script src = "todos.js"></script>
 </html>
