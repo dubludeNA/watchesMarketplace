@@ -27,7 +27,7 @@
       {
         "sys": { "id": "4" },
         "fields": {
-          "title": "Skying",
+          "title": "Skiing",
           "price": 22.99,
           "image": { "fields": { "file": { "url": "./Poze/Ski.jpg" } } }
         }
